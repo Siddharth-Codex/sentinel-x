@@ -1,0 +1,6 @@
+{
+  "name": "SENTINEL X - AI Network Threat Intelligence Platform",
+  "description": "Autonomous network traffic anomaly and behavioral threat intelligence platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
