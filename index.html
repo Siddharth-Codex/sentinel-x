@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENTINEL X - AI Network Threat Intelligence Platform</title>
+    <meta name="description" content="Autonomous network traffic anomaly and behavioral threat intelligence platform." />
+    <meta property="og:title" content="SENTINEL X - AI Network Threat Intelligence Platform" />
+    <meta property="og:description" content="Autonomous network traffic anomaly and behavioral threat intelligence platform." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Suppress Vite HMR WebSocket connection errors in sandbox/iframe environment
+      window.addEventListener('error', function(event) {
+        if (
+          event.filename && event.filename.includes('@vite/client') ||
+          (event.message && (
+            event.message.includes('WebSocket') ||
+            event.message.includes('ws://') ||
+            event.message.includes('wss://') ||
+            event.message.includes('failed to connect to websocket')
+          ))
+        ) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          return true;
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && (
+          String(event.reason).includes('WebSocket') ||
+          String(event.reason?.stack || '').includes('@vite/client')
+        )) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white text-slate-900 antialiased selection:bg-cyan-500/20 selection:text-cyan-800 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
